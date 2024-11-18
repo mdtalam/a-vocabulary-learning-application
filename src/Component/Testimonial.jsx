@@ -48,14 +48,14 @@ const Testimonial = () => {
             }}
             centeredSlides={true}
             modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper h-[35vh] container mx-auto"
+        className="mySwiper h-[250px] container mx-auto"
       >
         <SwiperSlide>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg h-48">
+          <div className="bg-cool-blue p-6 rounded-lg shadow-lg h-48">
             <div className="flex items-center justify-center space-x-4 mb-4">
               <img
                 className="w-12 h-12 rounded-full"
-                src="https://via.placeholder.com/50"
+                src="https://i.ibb.co.com/rpmsS1z/boy2.jpg"
                 alt="1"
               />
               <div>
@@ -72,11 +72,11 @@ const Testimonial = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg h-48">
+          <div className="bg-cool-blue p-6 rounded-lg shadow-lg h-48">
             <div className="flex items-center justify-center space-x-4 mb-4">
               <img
                 className="w-12 h-12 rounded-full"
-                src="https://via.placeholder.com/50"
+                src="https://i.ibb.co.com/4tyTSqM/boy1.png"
                 alt="1"
               />
               <div>
@@ -93,11 +93,11 @@ const Testimonial = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg h-48">
+          <div className="bg-cool-blue p-6 rounded-lg shadow-lg h-48">
             <div className="flex items-center justify-center space-x-4 mb-4">
               <img
                 className="w-12 h-12 rounded-full"
-                src="https://via.placeholder.com/50"
+                src="https://i.ibb.co.com/RzW1tPN/8f02334a-307d-4bed-811a-594474d3.jpg"
                 alt="1"
               />
               <div>
@@ -112,11 +112,11 @@ const Testimonial = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg h-48">
+          <div className="bg-cool-blue p-6 rounded-lg shadow-lg h-48">
             <div className="flex items-center justify-center space-x-4 mb-4">
               <img
                 className="w-12 h-12 rounded-full"
-                src="https://via.placeholder.com/50"
+                src="https://i.ibb.co.com/9wZBPpQ/ai-generative-happy-business-man.jpg"
                 alt="1"
               />
               <div>
@@ -133,11 +133,11 @@ const Testimonial = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg h-48">
+          <div className="bg-cool-blue p-6 rounded-lg shadow-lg h-48">
             <div className="flex items-center justify-center space-x-4 mb-4">
               <img
                 className="w-12 h-12 rounded-full"
-                src="https://via.placeholder.com/50"
+                src="https://i.ibb.co.com/5cmPJKy/girl1.jpg"
                 alt="1"
               />
               <div>
@@ -154,11 +154,11 @@ const Testimonial = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg h-48">
+          <div className="bg-cool-blue p-6 rounded-lg shadow-lg h-48">
             <div className="flex items-center justify-center space-x-4 mb-4">
               <img
                 className="w-12 h-12 rounded-full"
-                src="https://via.placeholder.com/50"
+                src="https://i.ibb.co.com/qgtGQWw/images-1.jpg"
                 alt="1"
               />
               <div>
@@ -175,11 +175,11 @@ const Testimonial = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg h-48">
+          <div className="bg-cool-blue p-6 rounded-lg shadow-lg h-48">
             <div className="flex items-center justify-center space-x-4 mb-4">
               <img
                 className="w-12 h-12 rounded-full"
-                src="https://via.placeholder.com/50"
+                src="https://i.ibb.co.com/Gs2SSV6/girl2.jpg"
                 alt="1"
               />
               <div>
@@ -200,7 +200,7 @@ const Testimonial = () => {
             <div className="flex items-center justify-center space-x-4 mb-4">
               <img
                 className="w-12 h-12 rounded-full"
-                src="https://via.placeholder.com/50"
+                src="https://i.ibb.co.com/7V6LxhR/d84820a624b948cef7a4103a98e2eea4.jpg"
                 alt="1"
               />
               <div>

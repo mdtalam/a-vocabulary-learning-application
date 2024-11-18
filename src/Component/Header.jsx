@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="navbar bg-gray-800 text-white p-4 shadow-md container mx-auto">
+      <div className="navbar bg-cool-blue text-white p-4 shadow-md container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,7 +47,7 @@ const Header = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-gray-800 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-cool-blue rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               {links}
             </ul>
@@ -57,12 +57,12 @@ const Header = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 font-bold">
             {links}
           </ul>
         </div>
         <div className="navbar-end gap-4">
-            <h1>Welcome, <span>tasnim</span></h1>
+            <h1 className="text-lg">Welcome, <span>tasnim</span></h1>
             <img className="rounded-full" src={userLogo} alt="" />
           <button className="bg-blue-500 hover:bg-blue-600 px-4 py-1 rounded-md">Login</button>
         </div>

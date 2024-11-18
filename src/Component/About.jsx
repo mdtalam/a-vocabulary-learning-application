@@ -21,39 +21,39 @@ const About = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* feature 1 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow">
-                <h4 className="text-xl font-semibold mb-3 text-white">Personalized Lessons</h4>
-                <p className="text-gray-400 text-lg">Learn at your own pace with lessons tailored to your skill level. Track your progress through various levels and topics.</p>
+            <div className="bg-cool-blue p-6 rounded-lg shadow">
+                <h4 className="text-lg font-semibold mb-3 text-white">Personalized Lessons</h4>
+                <p className="text-gray-300">Learn at your own pace with lessons tailored to your skill level. Track your progress through various levels and topics.</p>
             </div>
             {/* feature 2 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow">
-                <h4 className="text-xl font-semibold mb-3 text-white">Real-Life Usage</h4>
-                <p className="text-gray-400 text-lg">Reinforce your learning through interactive games and quizzes designed to test your knowledge and boost retention.</p>
+            <div className="bg-cool-blue p-6 rounded-lg shadow">
+                <h4 className="text-lg font-semibold mb-3 text-white">Real-Life Usage</h4>
+                <p className="text-gray-300">Reinforce your learning through interactive games and quizzes designed to test your knowledge and boost retention.</p>
             </div>
             {/* feature 3 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow">
-                <h4 className="text-xl font-semibold mb-3 text-white">Interactive Vocabulary Games</h4>
-                <p className="text-gray-400 text-lg">Reinforce your learning through interactive games and quizzes designed to test your knowledge and boost retention.
+            <div className="bg-cool-blue p-6 rounded-lg shadow">
+                <h4 className="text-lg font-semibold mb-3 text-white">Interactive Vocabulary Games</h4>
+                <p className="text-gray-300">Reinforce your learning through interactive games and quizzes designed to test your knowledge and boost retention.
                 </p>
             </div>
             {/* feature 4 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow">
-                <h4 className="text-xl font-semibold mb-3 text-white">Multilingual Support</h4>
-                <p className="text-gray-400 text-lg">Explore new words across various languages such as French, Spanish, Mandarin, Arabic, and more.
+            <div className="bg-cool-blue p-6 rounded-lg shadow">
+                <h4 className="text-lg font-semibold mb-3 text-white">Multilingual Support</h4>
+                <p className="text-gray-300">Explore new words across various languages such as French, Spanish, Mandarin, Arabic, and more.
                 </p>
             </div>
             {/* feature 5 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow">
-                <h4 className="text-xl font-semibold mb-3 text-white">Progress Tracking</h4>
-                <p className="text-gray-400 text-lg">Visualize your progress with detailed dashboards showing lessons completed, words mastered, and improvement over time.</p>
+            <div className="bg-cool-blue p-6 rounded-lg shadow">
+                <h4 className="text-lg font-semibold mb-3 text-white">Progress Tracking</h4>
+                <p className="text-gray-300">Visualize your progress with detailed dashboards showing lessons completed, words mastered, and improvement over time.</p>
             </div>
             {/* feature 6 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow">
-                <h4 className="text-xl font-semibold mb-3 text-white">Community Support</h4>
-                <p className="text-gray-400 text-lg">Connect with fellow learners and native speakers in a global community to practice and share your progress.</p>
+            <div className="bg-cool-blue p-6 rounded-lg shadow">
+                <h4 className="text-lg font-semibold mb-3 text-white">Community Support</h4>
+                <p className="text-gray-300">Connect with fellow learners and native speakers in a global community to practice and share your progress.</p>
             </div>
           </div>
-          <button className="bg-gray-800 hover:bg-red-600 text-3xl text-white py-4 px-10 mt-8 rounded-xl animate-pulse">Lets Learn</button>
+          <button className="bg-cool-blue hover:bg-red-600 text-3xl text-white py-4 px-10 mt-8 rounded-xl animate-pulse">Lets Learn</button>
         </div>
       </section>
     </div>

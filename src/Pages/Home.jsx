@@ -1,5 +1,7 @@
 import About from "../Component/About";
+import ChooseUs from "../Component/ChooseUs";
 import Slider from "../Component/Slider";
+import SuccessCount from "../Component/SuccessCount";
 import Testimonial from "../Component/Testimonial";
 
 
@@ -14,7 +16,13 @@ const Home = () => {
                 <About></About>
             </section>
             <section>
+                <SuccessCount></SuccessCount>
+            </section>
+            <section>
                 <Testimonial></Testimonial>
+            </section>
+            <section>
+                <ChooseUs></ChooseUs>
             </section>
         </div>
     );
