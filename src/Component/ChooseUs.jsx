@@ -26,10 +26,10 @@ const ChooseUs = () => {
                   <img className='w-full h-full rounded-xl' src={img1} alt="" />
                 </span>
               </div>
-              <h4 className="text-lg md:text-xl font-bold text-gray-800">
+              <h4 className="text-lg md:text-xl font-bold text-white">
                 Personalized Learning
               </h4>
-              <p className="mt-2 text-sm md:text-base text-gray-600">
+              <p className="mt-2 text-sm md:text-base text-white">
                 Tailored lessons to match your pace and style of learning.
               </p>
             </div>
@@ -40,10 +40,10 @@ const ChooseUs = () => {
                   <img className='w-full h-full rounded-xl' src={img2} alt="" />
                 </span>
               </div>
-              <h4 className="text-lg md:text-xl font-bold text-gray-800">
+              <h4 className="text-lg md:text-xl font-bold text-white">
                 Global Community
               </h4>
-              <p className="mt-2 text-sm md:text-base text-gray-600">
+              <p className="mt-2 text-sm md:text-base text-white">
                 Connect with language learners and native speakers worldwide.
               </p>
             </div>
@@ -54,10 +54,10 @@ const ChooseUs = () => {
                   <img className='w-full h-full rounded-xl' src={img3} alt="" />
                 </span>
               </div>
-              <h4 className="text-lg md:text-xl font-bold text-gray-800">
+              <h4 className="text-lg md:text-xl font-bold text-white">
                 Proven Results
               </h4>
-              <p className="mt-2 text-sm md:text-base text-gray-600">
+              <p className="mt-2 text-sm md:text-base text-white">
                 Thousands of learners have achieved fluency with our methods.
               </p>
             </div>

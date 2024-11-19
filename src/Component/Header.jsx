@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { GrLanguage } from "react-icons/gr";
 import { Link, NavLink } from "react-router-dom";
 import userLogo from '../../src/assets/user.png';
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Header = () => {
+  const {user,logOut} = useContext(AuthContext);
+
   const links = (
     <>
       <li>
@@ -62,9 +65,11 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end gap-4">
-            <h1 className="text-lg">Welcome, <span>tasnim</span></h1>
+            <h1 className="text-lg">Welcome, <span>{user?.email}</span></h1>
             <img className="rounded-full" src={userLogo} alt="" />
-          <button className="bg-blue-500 hover:bg-blue-600 px-4 py-1 rounded-md">Login</button>
+            {
+              user && user.email ? <Link onClick={logOut} className="font-semibold bg-cool-blue border border-white hover:bg-blue-600 px-4 py-2 rounded-md">Log-Out</Link> : <Link to="/auth/login" className="text-lg  font-semibold bg-cool-blue border border-white hover:bg-blue-600 px-6 py-2 rounded-md">Login</Link>
+            }
         </div>
       </div>
     </div>
