@@ -6,26 +6,26 @@ const Tutorials = () => {
   const navigate = useNavigate();
 
   const videos = [
-    "https://www.youtube.com/embed/dQw4w9WgXcQ", // Example video URLs
-    "https://www.youtube.com/embed/3JZ_D3ELwOQ",
-    "https://www.youtube.com/embed/tgbNymZ7vqY",
-    "https://www.youtube.com/embed/lTTajzrSkCw",
-    "https://www.youtube.com/embed/kJQP7kiw5Fk",
-    "https://www.youtube.com/embed/YbJOTdZBX1g",
-    "https://www.youtube.com/embed/RgKAFK5djSk",
-    "https://www.youtube.com/embed/JGwWNGJdvx8",
-    "https://www.youtube.com/embed/JGwWNGJdvx8",
-    "https://www.youtube.com/embed/JGwWNGJdvx8",
+    "https://www.youtube.com/embed/zwbmK3wrBa0", // Example video URLs
+    "https://www.youtube.com/embed/cywn0FJKWk4",
+    "https://www.youtube.com/embed/M11WPNYOKbg",
+    "https://www.youtube.com/embed/wJsc6DuNgl0",
+    "https://www.youtube.com/embed/fnagqHT-lps",
+    "https://www.youtube.com/embed/DAp_v7EH9AA",
+    "https://www.youtube.com/embed/lJw40ENfr2w",
+    "https://www.youtube.com/embed/0Odnbvov9N0",
+    "https://www.youtube.com/embed/Mh2KZhFoSIA",
+    "https://www.youtube.com/embed/8hkXxmtvcdw",
 ];
 
   return (
     <div className="min-h-screen p-6 bg-gray-50">
       <h1 className="text-4xl font-bold text-center mb-6">
-        Learn [Language Name]
+        Learn Spanish
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
         {videos.map((videoUrl, index) => (
-          <div key={index} className="aspect-w-16 aspect-h-9">
+          <div key={index} className="w-full max-w-4xl aspect-video rounded-lg overflow-hidden">
             <iframe
               className="w-full h-full rounded-lg shadow"
               src={videoUrl}

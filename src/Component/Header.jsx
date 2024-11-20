@@ -66,7 +66,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-[18px]">{links}</ul>
+          <ul className="menu menu-horizontal px-1 text-[16px]">{links}</ul>
         </div>
         <div className="navbar-end gap-4">
           <div className="flex flex-col hidden md:block lg:block">

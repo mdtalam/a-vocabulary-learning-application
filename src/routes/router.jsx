@@ -3,6 +3,7 @@ import ForgotPassword from "../Component/ForgotPassword";
 import Login from "../Component/Login/Login";
 import MyProfile from "../Component/MyProfile";
 import Register from "../Component/Register/Register";
+import UpdateProfile from "../Component/UpdateProfile";
 import AuthLayOut from "../MainLayOut/AuthLayOut";
 import MainLayOut from "../MainLayOut/MainLayOut";
 import Home from "../Pages/Home";
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
                 path: "/my-profile",
                 element: <PrivetRoute><MyProfile></MyProfile></PrivetRoute>
             },
+            {
+                path: "/my-profile/update-profile",
+                element: <UpdateProfile></UpdateProfile>
+            }
         ]
     },
     

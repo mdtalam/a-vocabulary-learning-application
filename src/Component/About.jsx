@@ -1,4 +1,13 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const About = () => {
+  useEffect(()=>{
+    AOS.init();
+  },[])
+  
+
   return (
     <div>
       <section className="bg-gray-100 py-16 px-8">
@@ -21,7 +30,7 @@ const About = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* feature 1 */}
-            <div className="bg-cool-blue p-6 rounded-lg shadow">
+            <div className=" bg-cool-blue p-6 rounded-lg shadow" data-aos="fade-right">
                 <h4 className="text-lg font-semibold mb-3 text-white">Personalized Lessons</h4>
                 <p className="text-gray-300">Learn at your own pace with lessons tailored to your skill level. Track your progress through various levels and topics.</p>
             </div>
