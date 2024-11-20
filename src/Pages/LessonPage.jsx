@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import CardLesson from "../Component/CardLesson";
 
 const LessonPage = () => {
@@ -27,7 +27,14 @@ const LessonPage = () => {
           ))}
         </div>
       </div>
-      
+      <div className="text-center mb-8">
+        <Link
+          className="px-6 py-3 bg-cool-blue text-white text-2xl font-semibold rounded-lg shadow hover:bg-red-500 transition"
+          to="/start-learning"
+        >
+          Back to Lesson
+        </Link>
+      </div>
     </div>
   );
 };

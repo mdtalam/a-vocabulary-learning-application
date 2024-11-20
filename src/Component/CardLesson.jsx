@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 const CardLesson = ({ lesson }) => {
-    
-  const { id, word, pronunciation, meaning, part_of_speech, difficulty } =
-    lesson;
+  const { id, word, pronunciation, meaning, part_of_speech, difficulty, when_to_say,example } = lesson;
+
+  const [modalData, setModalData] = useState(null);
 
   const difficultyColors = {
     easy: "bg-gradient-to-r from-gray-800 via-gray-600 to-green-300",
@@ -11,8 +11,27 @@ const CardLesson = ({ lesson }) => {
     hard: "bg-gradient-to-r from-gray-800 via-gray-600 to-red-600",
   };
 
+  const openModal = () => {
+    setModalData({
+      word,
+      when_to_say,
+      id,
+      pronunciation,
+      meaning,
+      part_of_speech,
+      difficulty,
+      when_to_say,
+      example,
+    });
+  };
+
+  const closeModal = () => {
+    setModalData(null);
+  };
+
   return (
     <div>
+      {/* Card */}
       <div
         className={`*:text-white *:text-center p-4 border-l-4 rounded-lg shadow-md w-full h-full ${
           difficultyColors[difficulty] || "bg-gray-100 border-gray-400"
@@ -26,12 +45,11 @@ const CardLesson = ({ lesson }) => {
           <span className="font-semibold">Pronunciation:</span> {pronunciation}
         </p>
         <p>
-          <span className="font-semibold">Part of Speech:</span>{" "}
-          {part_of_speech}
+          <span className="font-semibold">Part of Speech:</span> {part_of_speech}
         </p>
         <div>
           <button
-            onClick={() => document.getElementById("my_modal_5").showModal()}
+            onClick={openModal}
             className="mt-4 px-4 py-2 bg-cool-blue font-semibold text-white rounded-md shadow hover:bg-red-500"
           >
             When to Say
@@ -39,35 +57,36 @@ const CardLesson = ({ lesson }) => {
         </div>
       </div>
 
-      {/* <Modal key={id} lesson={lesson}></Modal> */}
-      <div>
-        <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-          <div className="modal-box">
-            <h3 className="font-bold text-lg">Word: {word}</h3>
-            <p className="py-4">
-              Press ESC key or click the button below to close
+      {/* Modal */}
+      {modalData && (
+        <div
+          id="modal"
+          className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50"
+        >
+          <div className="bg-white rounded-lg shadow-lg p-6 w-1/3 text-start">
+            <h3 className="text-lg font-bold">Word: {modalData.word}</h3>
+            <p className="mt-4">
+              <span className="font-semibold">Meaning:</span> {modalData.meaning}
             </p>
-            <div className="modal-action">
-              <form method="dialog">
-                {/* if there is a button in form, it will close the modal */}
-                <button className="btn">Close</button>
-              </form>
+            <p className="mt-4">
+              <span className="font-semibold">When to Say:</span> {modalData.when_to_say}
+            </p>
+            <p className="mt-4">
+              <span className="font-semibold">Example:</span> {modalData.example}
+            </p>
+            <div className="flex justify-center">
+            <button
+              onClick={closeModal}
+              className="mt-4 px-4 py-2 bg-cool-blue text-white rounded-md"
+            >
+              Close
+            </button>
             </div>
           </div>
-        </dialog>
-      </div>
-      {/* modal end */}
+        </div>
+      )}
     </div>
   );
 };
 
-// "id": "99",
-//     "word": "mar",
-//     "pronunciation": "mahr",
-//     "meaning": "sea",
-//     "part_of_speech": "noun",
-//     "difficulty": "medium",
-//     "Lesson_no": 7,
-//     "when_to_say": "When describing the ocean or sea",
-//     "example": "El mar es muy tranquilo. (ehl mahr ehs mwee trahn-KEE-loh) - The sea is very calm."
 export default CardLesson;
