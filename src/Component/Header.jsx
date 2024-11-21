@@ -3,6 +3,7 @@ import { GrLanguage } from "react-icons/gr";
 import { Link, NavLink } from "react-router-dom";
 import userLogo from "../../src/assets/user.png";
 import { AuthContext } from "../AuthProvider/AuthProvider";
+import './header.css';
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);

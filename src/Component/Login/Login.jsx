@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Login = () => {
-  const { userLogin, setUser } = useContext(AuthContext);
+  const { userLogin, setUser, googleLogin } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -28,6 +28,18 @@ const Login = () => {
         setShowError({ ...showError, login: error.code });
       });
   };
+
+  const handleGoogleLogin = () => [
+    googleLogin()
+    .then(result=>{
+      const user = result.user;
+        setUser(user);
+        navigate(location?.state ? location.state : "/");
+    })
+      .catch((error) => {
+        setShowError({ ...showError, login: error.code });
+    })
+  ]
 
   return (
     <div className="min-h-screen flex justify-center items-center">
@@ -75,7 +87,7 @@ const Login = () => {
             <label className="label">
               <Link
                 to="/auth/forgot-password"
-                state={{ email }} // Pass email state to ForgotPassword
+                state={{ email }} 
                 className="label-text-alt link link-hover"
               >
                 Forgot password?
@@ -85,6 +97,16 @@ const Login = () => {
           <div className="form-control mt-6">
             <button className="btn bg-cool-blue text-white text-lg font-semibold">
               Login
+            </button>
+          </div>
+          <div className="form-control mt-6">
+            <button
+              type="button"
+              onClick={handleGoogleLogin}
+              className="btn bg-red-500 hover:bg-red-500 text-white text-lg font-semibold flex items-center justify-center space-x-2"
+            >
+              <FaGoogle className="text-xl" /> 
+              <span>Login with Google</span>
             </button>
           </div>
         </form>

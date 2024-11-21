@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import ErrorPage from "../Component/Error/ErrorPage";
 import ForgotPassword from "../Component/ForgotPassword";
 import Login from "../Component/Login/Login";
 import MyProfile from "../Component/MyProfile";
@@ -77,7 +78,7 @@ const router = createBrowserRouter([
     },
     {
         path: "*",
-        element: <h1>this is error page</h1>
+        element: <ErrorPage></ErrorPage>
     }
 ]);
 
