@@ -48,7 +48,7 @@ const Register = () => {
             navigate("/")
         })
         .catch(error=>{
-            console.log(error)
+          setShowError(error)
         })
         setShowSuccess(true);
       })

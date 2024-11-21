@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { AiOutlineSound } from "react-icons/ai";
 
 const CardLesson = ({ lesson }) => {
@@ -25,16 +25,10 @@ const CardLesson = ({ lesson }) => {
 
   const pronounceWord = (wordToSay) => {
     const utterance = new SpeechSynthesisUtterance(wordToSay);
-    console.log(utterance);
     utterance.lang = "es-ES"; //spanish language
     window.speechSynthesis.speak(utterance);
   };
 
-  useEffect(() => {
-    window.speechSynthesis.onvoiceschanged = () => {
-      console.log("Voices loaded:", window.speechSynthesis.getVoices());
-    };
-  }, []);
 
   const openModal = () => {
     setModalData({
