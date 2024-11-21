@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Register = () => {
-  const { createNewUser, setUser, updateUserProfile } = useContext(AuthContext);
+  const { createNewUser, setUser, updateUserProfile, googleLogin } = useContext(AuthContext);
   const [showError, setShowError] = useState({});
   const [showSuccess, setShowSuccess] = useState(false);
   const [showPassword,setShowPassword] = useState(false);
@@ -57,6 +57,19 @@ const Register = () => {
         setShowSuccess(false);
       });
   };
+
+  // Handle Google login
+  const handleGoogleLogin = () => [
+    googleLogin()
+    .then(result=>{
+      const user = result.user;
+        setUser(user);
+        navigate(location?.state ? location.state : "/");
+    })
+      .catch((error) => {
+        setShowError({ ...showError, login: error.code });
+    })
+  ]
 
   return (
     <div className="min-h-screen flex justify-center items-center">
@@ -138,6 +151,16 @@ const Register = () => {
           <div className="form-control mt-6">
             <button className="btn bg-cool-blue text-white text-lg font-semibold">
               Register
+            </button>
+          </div>
+          <div className="form-control mt-6">
+            <button
+              type="button"
+              onClick={handleGoogleLogin}
+              className="btn bg-red-500 hover:bg-red-500 text-white text-lg font-semibold flex items-center justify-center space-x-2"
+            >
+              <FaGoogle className="text-xl" /> {/* Google Icon */}
+              <span>Register with Google</span>
             </button>
           </div>
         </form>
