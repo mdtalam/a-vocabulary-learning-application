@@ -7,6 +7,7 @@ import Register from "../Component/Register/Register";
 import UpdateProfile from "../Component/UpdateProfile";
 import AuthLayOut from "../MainLayOut/AuthLayOut";
 import MainLayOut from "../MainLayOut/MainLayOut";
+import AboutMe from "../Pages/AboutMe";
 import Home from "../Pages/Home";
 import LessonPage from "../Pages/LessonPage";
 import StartLearning from "../Pages/StartLearning";
@@ -45,7 +46,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/about-us",
-                element: <h1>this is about us page</h1>
+                element: <AboutMe></AboutMe>
             },
             {
                 path: "/my-profile",

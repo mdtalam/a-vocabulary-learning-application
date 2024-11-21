@@ -25,7 +25,7 @@ const Tutorials = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
         {videos.map((videoUrl, index) => (
-          <div key={index} className="w-full max-w-4xl aspect-video rounded-lg overflow-hidden">
+          <div key={index} className="w-full max-w-4xl aspect-video rounded-lg overflow-hidden animate__animated animate__lightSpeedInRight">
             <iframe
               className="w-full h-full rounded-lg shadow"
               src={videoUrl}

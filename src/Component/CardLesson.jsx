@@ -51,7 +51,8 @@ const CardLesson = ({ lesson }) => {
     <div>
       {/* Card */}
       <div
-        className={`*:text-white *:text-center p-4 border-l-4 rounded-lg shadow-md w-full h-full ${
+        
+        className={`*:text-white *:text-center p-4 border-l-4 rounded-lg shadow-md w-full h-full animate__animated animate__jackInTheBox ${
           difficultyColors[difficulty] || "bg-gray-100 border-gray-400"
         }`}
         onClick={() => pronounceWord(word)} // Pronounce word on card click
