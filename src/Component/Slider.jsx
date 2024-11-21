@@ -4,7 +4,7 @@ import sliderImg1 from '../../src/assets/8f02334a-307d-4bed-811a-594474d3.jpg';
 import sliderImg5 from '../../src/assets/img-5.jpg';
 import sliderImg2 from '../../src/assets/img3.jpg';
 import sliderImg4 from '../../src/assets/img4.jpg';
-import sliderImg3 from '../../src/assets/Nathalie-languages-blog-learning.jpg';
+import sliderImg3 from '../../src/assets/pexels-tima-miroshnichenko-5912586.jpg';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -29,7 +29,7 @@ const Slider = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper h-[70vh] w-screen container mx-auto"
+        className="mySwiper h-[70vh] w-screen container mx-auto bg-cover"
       >
         
         <SwiperSlide>

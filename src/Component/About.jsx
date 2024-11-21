@@ -62,7 +62,7 @@ const About = () => {
                 <p className="text-gray-300">Connect with fellow learners and native speakers in a global community to practice and share your progress.</p>
             </div>
           </div>
-          <button className="bg-cool-blue hover:bg-red-600 text-3xl text-white py-4 px-10 mt-8 rounded-xl animate-pulse">Lets Learn</button>
+          <button className="bg-cool-blue hover:bg-red-600 text-3xl text-white py-4 px-10 mt-8 rounded-xl animate-pulse">Let’s Learn</button>
         </div>
       </section>
     </div>
